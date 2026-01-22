@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+      Título y descripción básicos para SEO.  Mantener la estética y funcionalidad
+      original, pero con ligeros cambios para una apariencia más moderna y
+      premium.
+    -->
     <title>Clínica Odontología y Estética</title>
+    <meta name="description" content="Clínica de odontología y medicina estética en Montevideo.  Odontología integral, mesoterapia facial y capilar, y un equipo humano dedicado a tu bienestar.">
+    <!-- Fuentes Google optimizadas -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Hojas de estilo -->
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- Íconos externos -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/png">
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- =======================
+         Encabezado fijo
+    ======================== -->
     <header id="header">
         <div class="logo">
             <img src="/img/logo.png" alt="Logo Clínica">
@@ -23,151 +37,155 @@
             <a href="#contacto">Contacto</a>
         </nav>
         <a href="#contacto" class="btn-header">Reserva tu cita</a>
-        <div id="menu-toggle">&#9776;</div>
+        <div id="menu-toggle" aria-label="Abrir menú de navegación">&#9776;</div>
     </header>
 
-    <!-- Hero -->
+    <!-- =======================
+         Hero / portada
+    ======================== -->
     <section class="hero" id="inicio">
-        <div class="hero-content">
+        <div class="hero-content animate">
             <h1>Tu sonrisa y bienestar en manos de expertos</h1>
             <p>Odontología y Medicina Estética de la más alta calidad, con tecnología avanzada y trato personalizado.</p>
             <a href="#contacto" class="btn">Agenda tu cita hoy</a>
         </div>
     </section>
 
-    <!-- Beneficios -->
-    <section id="sobre">
+    <!-- =======================
+         Sobre Nosotros / Beneficios
+    ======================== -->
+    <section id="sobre" class="section">
         <h2 class="animate">¿Por qué elegir nuestra clínica?</h2>
         <div class="benefits">
             <div class="benefit animate">
-                <img src="https://img.icons8.com/color/96/000000/doctor-male.png"/>
-                <h3>Profesionales Certificados</h3>
+                <img src="https://img.icons8.com/color/96/000000/doctor-male.png" alt="Profesionales Certificados">
+                <h3>Profesionales certificados</h3>
                 <p>Equipo altamente calificado y con experiencia comprobada.</p>
             </div>
             <div class="benefit animate">
-                <img src="https://img.icons8.com/color/96/000000/robot-2.png"/>
-                <h3>Tecnología Avanzada</h3>
+                <img src="https://img.icons8.com/color/96/000000/robot-2.png" alt="Tecnología Avanzada">
+                <h3>Tecnología avanzada</h3>
                 <p>Equipos modernos y procedimientos seguros y precisos.</p>
             </div>
             <div class="benefit animate">
-                <img src="https://img.icons8.com/color/96/000000/customer-support.png"/>
-                <h3>Trato Personalizado</h3>
+                <img src="https://img.icons8.com/color/96/000000/customer-support.png" alt="Trato Personalizado">
+                <h3>Trato personalizado</h3>
                 <p>Cada paciente es único y recibe atención individualizada.</p>
             </div>
             <div class="benefit animate">
-                <img src="https://img.icons8.com/color/96/000000/checked.png"/>
-                <h3>Resultados Garantizados</h3>
+                <img src="https://img.icons8.com/color/96/000000/checked.png" alt="Resultados Garantizados">
+                <h3>Resultados garantizados</h3>
                 <p>Experiencia comprobada y satisfacción asegurada.</p>
             </div>
         </div>
     </section>
 
-    <!-- Servicios -->
-    <section id="servicios">
-        <h2 class="animate">Nuestros Servicios</h2>
+    <!-- =======================
+         Servicios
+    ======================== -->
+    <section id="servicios" class="section">
+        <h2 class="animate">Nuestros servicios</h2>
         <div class="services">
             <div class="service animate">
-                <img src="/img/limpieza_blanqueamiento.png">
+                <img src="/img/limpieza_blanqueamiento.png" alt="Odontología Integral">
                 <div class="service-content">
-                    <h3>Odontología Integral</h3>
+                    <h3>Odontología integral</h3>
                     <p>Atención odontológica completa con enfoque estético y funcional.</p>
                     <a href="#odontologia" class="btn">Ver especialidades</a>
                 </div>
             </div>
             <div class="service animate">
-                <img src="/img/meso.png">
+                <img src="/img/meso.png" alt="Mesoterapia Capilar">
                 <div class="service-content">
-                    <h3>Mesoterapia Capilar</h3>
+                    <h3>Mesoterapia capilar</h3>
                     <p>Tratamiento médico avanzado para fortalecer el cabello y frenar la caída.</p>
                     <a href="#contacto" class="btn">Solicitar cita</a>
                 </div>
             </div>
             <div class="service animate">
-                <img src="/img/sonrisa.png">
+                <img src="/img/sonrisa.png" alt="Mesoterapia Facial">
                 <div class="service-content">
-                    <h3>Mesoterapia Facial</h3>
+                    <h3>Mesoterapia facial</h3>
                     <p>Rejuvenecimiento profundo que mejora la textura y luminosidad de la piel.</p>
                     <a href="#contacto" class="btn">Solicitar cita</a>
                 </div>
             </div>
+        </div>
+    </section>
 
-    <!-- ODONTOLOGÍA PREMIUM -->
-    <section id="odontologia" class="odontologia-premium">
+    <!-- =======================
+         Odontología premium (subsección de servicios)
+    ======================== -->
+    <section id="odontologia" class="odontologia-premium section">
         <div class="odontologia-wrapper">
-
             <div class="odontologia-header animate">
-                <span class="section-label">Área Médica</span>
-                <h2>Odontología Integral</h2>
+                <span class="section-label">Área médica</span>
+                <h2>Odontología integral</h2>
                 <p>
                     Nuestro servicio odontológico complementa los tratamientos estéticos,
                     brindando una atención integral basada en salud, funcionalidad y estética.
                 </p>
             </div>
-
             <div class="odontologia-cards">
-
                 <div class="odontologia-card animate">
-                    <h3>Odontología General</h3>
+                    <h3>Odontología general</h3>
                     <p>Prevención, diagnóstico y tratamientos odontológicos esenciales.</p>
                 </div>
-
                 <div class="odontologia-card animate">
-                    <h3>Odontología Restauradora</h3>
+                    <h3>Odontología restauradora</h3>
                     <p>Reconstrucción dental estética y funcional con materiales modernos.</p>
                 </div>
-
                 <div class="odontologia-card animate">
                     <h3>Periodoncia</h3>
                     <p>Tratamiento de encías y tejidos de soporte dental.</p>
                 </div>
-
                 <div class="odontologia-card animate">
-                    <h3>Prótesis Dental</h3>
+                    <h3>Prótesis dental</h3>
                     <p>Rehabilitación oral personalizada para recuperar función y estética.</p>
                 </div>
-
                 <div class="odontologia-card animate">
                     <h3>Ortodoncia</h3>
                     <p>Corrección dental tradicional e invisible.</p>
                 </div>
-
                 <div class="odontologia-card animate">
-                    <h3>Odontología Estética</h3>
+                    <h3>Odontología estética</h3>
                     <p>Diseño de sonrisa y armonización dental.</p>
                 </div>
-
                 <div class="odontologia-card animate">
-                    <h3>Cirugía Bucal</h3>
+                    <h3>Cirugía bucal</h3>
                     <p>Procedimientos quirúrgicos seguros y precisos.</p>
                 </div>
-
                 <div class="odontologia-card animate">
                     <h3>Odontopediatría</h3>
                     <p>Atención odontológica especializada para niños.</p>
                 </div>
-
+            </div>
         </div>
     </section>
 
-    <!-- Equipo -->
-    <section id="equipo">
+    <!-- =======================
+         Equipo médico
+    ======================== -->
+    <section id="equipo" class="section">
         <h2 class="animate">Conoce a nuestro equipo</h2>
         <div class="team">
             <div class="member animate">
                 <img src="/img/anya.png" alt="Dra. Anya Caballero">
                 <h4>Dra. Anya Caballero</h4>
-                <p>Odontóloga especializado en implantes y estética dental.</p>
+                <p>Odontóloga especializada en implantes y estética dental.</p>
             </div>
             <div class="member animate">
                 <img src="/img/liszi.png" alt="Dra. Liszandra Sánchez">
                 <h4>Dra. Liszandra Sánchez</h4>
-                <p>Máster en Medicina estética y experta en implante capilar.</p>
+                <p>Máster en medicina estética y experta en implante capilar.</p>
             </div>
         </div>
     </section>
 
-    <!-- Testimonios -->
-    <section id="testimonios">
+    <!-- =======================
+         Testimonios
+    ======================== -->
+    <section id="testimonios" class="section">
         <h2 class="animate">Testimonios de nuestros pacientes</h2>
         <div class="testimonial-container">
             <div class="testimonials" id="testimonial-slider">
@@ -191,11 +209,13 @@
         </div>
     </section>
 
-    <!-- Contacto -->
-    <section id="contacto">
-        <h2 class="animate">Contacto y Reservas</h2>
+    <!-- =======================
+         Contacto y formulario
+    ======================== -->
+    <section id="contacto" class="section">
+        <h2 class="animate">Contacto y reservas</h2>
         <div class="contact">
-            <form id="contact-form" class="animate">
+            <form id="contact-form" class="animate" autocomplete="off">
                 <input type="text" placeholder="Nombre completo" required>
                 <input type="email" placeholder="Correo electrónico" required>
                 <input type="tel" placeholder="Teléfono" required>
@@ -204,12 +224,14 @@
                 <button type="submit">Enviar solicitud</button>
             </form>
             <div class="contact-map animate">
-                <iframe src="https://maps.google.com/maps?q=Montevideo&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+                <iframe src="https://maps.google.com/maps?q=Montevideo&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen title="Mapa de ubicación"></iframe>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- =======================
+         Pie de página
+    ======================== -->
     <footer>
         <div>
             <h4>Clínica Odontología y Medicina Estética</h4>
@@ -218,7 +240,7 @@
         <div>
             <h4>Enlaces</h4>
             <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre Nosotros</a>
+            <a href="#sobre">Sobre nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#equipo">Equipo</a>
             <a href="#testimonios">Testimonios</a>
@@ -232,12 +254,24 @@
         </div>
         <div>
             <h4>Síguenos</h4>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">WhatsApp</a>
+
+        <div class="social-icons">
+            <a href="https://www.instagram.com/clinicaintegral.odontocdc/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="https://wa.me/59897956907" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
         </div>
+
     </footer>
 
+    <!-- Scripts -->
     <script src="script.js"></script>
 </body>
 </html>
